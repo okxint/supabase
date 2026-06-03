@@ -5789,7 +5789,7 @@ export interface operations {
       }
     }
     responses: {
-      201: {
+      200: {
         headers: {
           [name: string]: unknown
         }
@@ -9912,7 +9912,7 @@ export interface operations {
         }
         content?: never
       }
-      /** @description Feature requires a higher plan */
+      /** @description This feature requires the Enterprise organization plan. */
       402: {
         headers: {
           [name: string]: unknown
@@ -9987,7 +9987,7 @@ export interface operations {
         }
         content?: never
       }
-      /** @description Feature requires a higher plan */
+      /** @description This feature requires the Enterprise organization plan. */
       402: {
         headers: {
           [name: string]: unknown
@@ -12218,6 +12218,13 @@ export interface operations {
         }
         content?: never
       }
+      /** @description This feature requires the Pro, Team, or Enterprise organization plan. */
+      402: {
+        headers: {
+          [name: string]: unknown
+        }
+        content?: never
+      }
       /** @description Forbidden action */
       403: {
         headers: {
@@ -13000,6 +13007,13 @@ export interface operations {
           'application/json': components['schemas']['VanitySubdomainConfigResponse']
         }
       }
+      /** @description This feature requires the Pro, Team, or Enterprise organization plan. */
+      400: {
+        headers: {
+          [name: string]: unknown
+        }
+        content?: never
+      }
       /** @description Unauthorized */
       401: {
         headers: {
@@ -13102,6 +13116,13 @@ export interface operations {
           'application/json': components['schemas']['ActivateVanitySubdomainResponse']
         }
       }
+      /** @description This feature requires the Pro, Team, or Enterprise organization plan. */
+      400: {
+        headers: {
+          [name: string]: unknown
+        }
+        content?: never
+      }
       /** @description Unauthorized */
       401: {
         headers: {
@@ -13155,6 +13176,13 @@ export interface operations {
         content: {
           'application/json': components['schemas']['SubdomainAvailabilityResponse']
         }
+      }
+      /** @description This feature requires the Pro, Team, or Enterprise organization plan. */
+      400: {
+        headers: {
+          [name: string]: unknown
+        }
+        content?: never
       }
       /** @description Unauthorized */
       401: {
